@@ -1,0 +1,80 @@
+@import "bootstrap";
+
+body {
+	background-color: #E4E4E4;
+	font-family: 'Helvetica Neue', sans-serif;
+	color: #34495E;
+	background-image: url('/assets/kenny_loggins_illustrated.png');
+	background-repeat:no-repeat;
+	background-position:right top;
+}
+h1 {
+	font-family: 'Chewy', sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 90px;
+}
+.lead {
+	font-weight: 100;
+	font-family: 'Chewy', sans-serif;
+	font-size: 36px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.center {
+	text-align: center;
+}
+.margin-top-10 {
+	margin-top: 10px;
+}
+.margin-top-15 {
+	margin-top: 15px;
+}
+.margin-top-20 {
+	margin-top: 20px;
+}
+.margin-top-40 {
+	margin-top: 40px;
+}
+.margin-top-60 {
+	margin-top: 60px;
+}
+.margin-top-70 {
+	margin-top: 70px;
+}
+.margin-top-80 {
+	margin-top: 80px;
+}
+.margin-top-100 {
+	margin-top: 100px;
+}
+.kl-form-frame {
+	border: 1px solid #999;
+	background-color: #fff;
+	-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+	padding: 5px;
+}
+@media screen and(max-width: 981px) {
+  body {
+    padding-top: 0px;
+  }
+  h1 {
+	  font-size: 90px;
+	  font-weight: 300;
+  }
+  .lead {
+	  font-weight: 300;
+	  font-size: 50px;
+  }
+  .kl-form-frame {position: absolute;
+	width: 95%;
+	/* bottom: 0px; */
+	top: 240px;
+}
+}
+
+@media screen and(min-width: 1281px) {
+  
+}
