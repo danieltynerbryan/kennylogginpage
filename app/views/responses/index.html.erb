@@ -1,21 +1,28 @@
 <h1>The Kenny Loggin Page</h1>
 
 <div class="row">
-	<div class="col-md-5">
-		<table class="table table-bordered">
-		  <tr>
-		    <th></th>
-		    <th></th>
-		  </tr>
-		
-		<% @responses.each do |response| %>
-		  <tr>
-		    <td><%= response.name %></td>
-		    <td><%= link_to 'Destroy', response, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-		  </tr>
-		<% end %>
-		</table>
+	<div class="col-md-6">
+		<div class="page-main">
+			<div class="row">
+				<%= render 'form' %>
+			</div>
+			<div class="row">
+				<table class="table" style="max-height:200px;">
+					<thead>
+						<tr>
+							<th colspan="2">Lyrics</th>
+						</tr>	
+					</thead>	
+					<% @responses.each do |response| %>
+					  <tr>
+					    <td><%= response.name %></td>
+					    <td class="kl-response-delete">
+					    	<%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, response, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-sm" %>
+					    </td>
+					  </tr>
+					<% end %>
+				</table>
+			</div>
+		</div>
 	</div>
 </div>
-
-<%= link_to 'New Response', new_response_path %>
